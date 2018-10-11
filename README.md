@@ -1,6 +1,6 @@
 ![BEMex logo](images/logo.png "BEMex")
 
-BEMex is an extended Block Element Modifier system featuring namespacing, layouts, states and js hooks. It's made to work well with component based javascript and unweildy long term projects that need a tidy CSS goal to work towards.
+BEMex is an extended **B**lock **E**lement **M**odifier system featuring namespacing, layouts, states and js hooks. It's made to work well with component based javascript and unweildy long term projects that need a tidy CSS goal to work towards.
 
 ## Get Started
 
@@ -24,7 +24,7 @@ Here is the most obvious and easy example though to get your head around how bas
 The point of BEM is to make blocks reusuable, it's ugly and means you have a lot of HTML in your front end, but it works. It gets you out of deep inheritance which gets you in trouble, and uses the last declared class rule instead. It's a different sort of cascading for **C**ascading **S**tyle **S**heets.
 
 # Extending with BEMex
-Examples like the button above are everywhere but they don't reflect the difficult scenarious in the real world. In real life you change things on the outside of the button, and that affects the inside. Additionally you have other things like state and javascript hooks. That's why BEMex takes:
+Examples like the button above are everywhere but they don't reflect the difficult scenarios in the real world. In real life you change things on the outside of the button, and that affects the inside. Additionally you have other things like state and javascript hooks. That's why BEMex takes:
 
 - Layouts
 - States
@@ -36,7 +36,7 @@ out of the hands of a BEM component.
 | Type       | Prefix   | Example | Description  | Typical CSS Properties |
 |------------|----------|---------|--------------|------------|
 | Component  | c-       | c-button c-list         | The blocks that form the backbone of an application and contain all of the cosmetics for a standalone block. A react component is not the same as a BEMex component | everything except sizing, positioning and margins
-| Layout     | l-       | l-left l-container      | These modules are used to position c- blocks and structure an application’s layout. They can be built in a similar way to blocks but should never have anything other than positioning properties. | width, height, margin, padding, position
+| Layout     | l-       | l-left l-container      | These modules are used to position c- blocks and structure an application’s layout. They can be built in a similar way to blocks but should never have anything other than positioning and sizing properties. | width, height, margin, padding, position
 | Helpers     | h- | h-open h-visible h-uppercase      | Indicate different states that a c- block can have or when there is a minor change in one place on a global component. | display, opacity, animate, padding
 | Javascript | js-      | js-next-page js-spinner | These indicate that JavaScript behavior is attached to a block. No styles should ever be associated with them; they are purely used to enable easier manipulation with script.                              | Never!
 
@@ -45,7 +45,7 @@ out of the hands of a BEM component.
 <!-- Centered Container  -->
 <div class="l-container">
 
-    <!-- Layout elment, pushing it to the right -->
+    <!-- Layout element, pushing it to the right -->
     <div class="l-container__right">
 
         <!-- Our button component. Has a JS hook. In a disabled state -->
@@ -172,4 +172,4 @@ The order in precompiler files for both layouts and components is:
 - [Blocks vs Elements vs Modifiers](examples/block-element-modifier.md) A table with a header and cell highlighting showing the difference between the 3 parts of BEM
 - [Helpers Example](examples/helper.md) Helpers being used to toggle between uppercase and lowercase
 - [Nested Layouts](examples/nested-layouts.md) Showing sections and contents for nested positioning
-- [Grid example](examples/grid-example.md) Example of a minimalist grid layout
+- [Grid example](examples/grid.md) Example of a minimalist grid layout
