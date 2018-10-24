@@ -2,11 +2,6 @@
 
 BEMex is an extended **B**lock **E**lement **M**odifier system featuring namespacing, layouts, states and js hooks. It's made to work well with component based javascript and unweildy long term projects that need a tidy CSS goal to work towards.
 
-## Get Started
-
-Get started by downloading the scaffolding for a generic component, page and variables file.
-
-Download project scaffolding: [LESS](./scaffolding/less) | [SASS](./scaffolding/sass)
 
 # Building on BEM
 Here is the most obvious and easy example though to get your head around how basic BEM works.
